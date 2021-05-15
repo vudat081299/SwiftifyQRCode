@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		6B442DAB264EAF3100BB75A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B442DA9264EAF3100BB75A7 /* LaunchScreen.storyboard */; };
 		6B442DB6264EAF3100BB75A7 /* QRCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B442DB5264EAF3100BB75A7 /* QRCodeTests.swift */; };
 		6B442DC1264EAF3100BB75A7 /* QRCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B442DC0264EAF3100BB75A7 /* QRCodeUITests.swift */; };
+		C4A06DB5264F7F9F0011E47E /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C4A06DB4264F7F9F0011E47E /* CryptoSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A06DB5264F7F9F0011E47E /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = QRCode;
+			packageProductDependencies = (
+				C4A06DB4264F7F9F0011E47E /* CryptoSwift */,
+			);
 			productName = QRCode;
 			productReference = 6B442D9B264EAF2D00BB75A7 /* QRCode.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 6B442D92264EAF2D00BB75A7;
+			packageReferences = (
+				C4A06DB3264F7F9F0011E47E /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = 6B442D9C264EAF2D00BB75A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -595,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4A06DB3264F7F9F0011E47E /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4A06DB4264F7F9F0011E47E /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4A06DB3264F7F9F0011E47E /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B442D93264EAF2D00BB75A7 /* Project object */;
 }
